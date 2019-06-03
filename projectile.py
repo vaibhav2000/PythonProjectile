@@ -24,7 +24,7 @@ def runTheGame():
 
        
         ballrect= ballrect.move(speed)
-        speed[1]= sign*(math.sqrt(ballrect.bottom/5)) 
+         speed[1]= sign*(math.sqrt((ballrect.bottom+ballrect.top)/10)) 
 
         if ballrect.left<0 or ballrect.right>len:
             speed[0]= -speed[0]
